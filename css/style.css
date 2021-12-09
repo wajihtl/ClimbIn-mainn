@@ -816,7 +816,7 @@ ol {
 	font-size: 28px;
 	color: #ffffff;
 	font-weight: 600;
-	margin-bottom: 16px;
+	margin-bottom: 10px;
 	-webkit-transform: skewY(4deg);
 	-ms-transform: skewY(4deg);
 	transform: skewY(4deg);
@@ -830,7 +830,7 @@ ol {
 }
 
 .ps-item .pi-price h2 {
-	font-size: 60px;
+	font-size: 30px;
 	color: #e0a734;
 	font-weight: 600;
 }
@@ -843,7 +843,7 @@ ol {
 }
 
 .ps-item ul {
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 	-webkit-transform: skewY(4deg);
 	-ms-transform: skewY(4deg);
 	transform: skewY(4deg);
@@ -852,7 +852,7 @@ ol {
 .ps-item ul li {
 	font-size: 14px;
 	color: #c4c4c4;
-	line-height: 32px;
+	line-height: 20px;
 	list-style: none;
 }
 
@@ -884,7 +884,6 @@ ol {
 .gallery-section {
 	background: #151515;
 	overflow: hidden;
-	padding-top: 100px;
 }
 
 .gallery-section.gallery-page {
@@ -1436,7 +1435,7 @@ ol {
 }
 
 .ss-text {
-	background: #252525;
+	background-color: #165673;
 	padding: 72px 30px;
 	height: 293px;
 	position: relative;
@@ -1447,7 +1446,8 @@ ol {
 }
 
 .ss-text:hover {
-	background: #363636;
+	background: #0016b0;
+	#165673
 }
 
 .ss-text:hover a {
@@ -1455,7 +1455,7 @@ ol {
 }
 
 .ss-text:hover:after {
-	background: #363636;
+	background: #0016b0;
 }
 
 .ss-text:after {
@@ -1464,7 +1464,7 @@ ol {
 	top: 50%;
 	height: 20px;
 	width: 20px;
-	background: #252525;
+	background: #165673;
 	content: "";
 	-webkit-transform: rotate(45deg) translateY(-10px);
 	-ms-transform: rotate(45deg) translateY(-10px);
@@ -1651,7 +1651,7 @@ ol {
 .class-timetable table tbody tr td.class-time {
 	font-size: 12px;
 	color: #e0a734;
-	background: #000000;
+	background: #0b3547;
 	border: 1px solid #363636;
 }
 

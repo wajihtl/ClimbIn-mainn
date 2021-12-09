@@ -2,9 +2,9 @@
                 <footer class="footer mt-auto footer-light">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6 small">FoodHaus</div>
+                            <div class="col-md-6 small">Climb'in</div>
                             <div class="col-md-6 text-md-right small">
-                                <div>Fekret'Com || Projet Web 2A6</div>
+                                <div>@2021</div>
                                
                                
                             </div>  

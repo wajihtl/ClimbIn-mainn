@@ -43,12 +43,12 @@
     </div>
     <nav class="canvas-menu mobile-menu">
         <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="./class-details.html">Planing</a></li>
-            <li><a href="./services.html">Services</a></li>
-            <li><a href="./team.html">Our Team</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.php">Home</a></li>
+            <li><a href="./about-us.php">About Us</a></li>
+            <li><a href="./class-details.php">Planing</a></li>
+            <li><a href="./services.php">Services</a></li>
+            <li><a href="./bar.php">bar</a></li>
+            <li><a href="./contact.php">Contact</a></li>
         </ul>
     </nav>
     <div id="mobile-menu-wrap"></div>
@@ -66,7 +66,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="logo">
-                    <a href="index.php">
+                    <a href="./index.html">
                         <img src="img/logo.png" alt="">
                     </a>
                 </div>
@@ -74,12 +74,12 @@
             <div class="col-lg-6">
                 <nav class="nav-menu">
                     <ul>
-                        <li class="active"><a href="index.php">Home</a></li>
-                        <li><a href="./about-us.html">About Us</a></li>
-                        <li><a href="./class-details.html">Planing</a></li>
-                        <li><a href="./services.html">Services</a></li>
-                        <!-- <li><a href="./team.html">Our Team</a></li> -->
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li class="active"><a href="./index.php">Home</a></li>
+                        <li><a href="./about-us.php">About Us</a></li>
+                        <li><a href="./class-details.php">Planing</a></li>
+                        <li><a href="./services.php">Services</a></li>
+                        <li><a href="./bar.php">bar</a></li>
+                        <li><a href="./contact.php">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -133,55 +133,6 @@
 </section>
 <!-- Hero Section End -->
 
-<!-- ChoseUs Section Begin -->
-<section class="choseus-section spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <span>Why chose us?</span>
-                    <h2>PUSH YOUR LIMITS FORWARD</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="cs-item">
-                    <span class="fa fa-shield"></span>
-                    <h4>Modern equipment</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        dolore facilisis.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="cs-item">
-                    <span class="fa fa-diamond" aria-hidden="true"></span>
-                    <h4>Healthy nutrition plan</h4>
-                    <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                        facilisis.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="cs-item">
-                    <span class="flaticon-002-dumbell"></span>
-                    <h4>Proffesponal training plan</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        dolore facilisis.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="cs-item">
-                    <span class="flaticon-014-heart-beat"></span>
-                    <h4>Unique to your needs</h4>
-                    <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                        facilisis.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ChoseUs Section End -->
-
 <!-- Classes Section Begin -->
 <section class="classes-section spad">
     <div class="container">
@@ -194,19 +145,19 @@
             </div>
         </div>
         <div class="row">
-        <?php
-        $sql = "SELECT * FROM classes";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
-        while ($classes = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            <?php
+            $sql = "SELECT * FROM classes";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute();
+            while ($classes = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
-            $id = $classes['id'];
-            $Title = $classes['Title'];
-            $Description = $classes['Description'];
-            $Content = $classes['Content'];
-            $Picture = $classes['Picture'];
+                $id = $classes['id'];
+                $Title = $classes['Title'];
+                $Description = $classes['Description'];
+                $Content = $classes['Content'];
+                $Picture = $classes['Picture'];
 
-            ?>
+                ?>
 
                 <div class="col-lg-4 col-md-6">
                     <div class="class-item">
@@ -222,40 +173,43 @@
                 </div>
 
 
-        <?php }
-        ?>
+            <?php }
+            ?>
         </div>
         <div class="row">
+            <?php
+            $sql = "SELECT * FROM event";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute();
+            while ($classes = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
-            <div class="col-lg-6 col-md-6">
-                <div class="class-item">
-                    <div class="ci-pic">
-                        <img src="img/classes/class-4.jpg" alt="">
-                    </div>
-                    <div class="ci-text">
-                        <span>Sortie</span>
-                        <h4>grimper en falaise</h4>
-                        <a href="#"><i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="class-item">
-                    <div class="ci-pic">
-                        <img src="img/classes/class-5.jpg" alt="">
-                    </div>
-                    <div class="ci-text">
-                        <span>Sortie</span>
-                        <h4>grimper bloc</h4>
-                        <a href="#"><i class="fa fa-angle-right"></i></a>
+                $id = $classes['id'];
+                $Title = $classes['Title'];
+                $Description = $classes['Description'];
+                $Content = $classes['Content'];
+                $Picture = $classes['Picture'];
+
+                ?>
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="class-item">
+                        <div class="ci-pic">
+                            <img src="./backend/assets/img/<?php echo $Picture; ?>" alt="">
+                        </div>
+                        <div class="ci-text">
+                            <span><?php echo $Title; ?></span>
+                            <h4><?php echo $Description; ?></h4>
+                            <a href="#"><i class="fa fa-angle-right"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            <?php }
+            ?>
         </div>
 
     </div>
 </section>
-<!-- ChoseUs Section End -->
+
 
 <!-- Banner Section Begin -->
 <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
