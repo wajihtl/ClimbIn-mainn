@@ -86,7 +86,7 @@
                                         <?php echo $Content; ?>
                                     </td>
                                     <td>
-                                        <img src="./assets/img/<?php echo $Picture; ?>" width="50" height="50"/>
+                                        <img src="../img/classes/<?php echo $Picture; ?>" width="50" height="50"/>
                                     </td>
 
                                     <td>
@@ -100,7 +100,7 @@
                                         <?php
                                         if (isset($_POST['delete'])) {
                                             $id = $_POST['id'];
-                                            $sql = "DELETE FROM classes WHERE $id = :id";
+                                            $sql = "DELETE FROM classes WHERE id = :id";
                                             $stmt = $pdo->prepare($sql);
                                             $stmt->execute([':id' => $id]);
                                             header("Location: Classes.php");

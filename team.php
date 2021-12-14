@@ -73,7 +73,7 @@
                         <li><a href="./about-us.php">About Us</a></li>
                         <li><a href="./class-details.php">Planing</a></li>
                         <li><a href="./services.php">Services</a></li>
-                        <!-- <li><a href="./team.php">Our Team</a></li> -->
+                        <li><a href="./bar.php">bar</a></li>
                         <li><a href="./contact.php">Contact</a></li>
                     </ul>
                 </nav>

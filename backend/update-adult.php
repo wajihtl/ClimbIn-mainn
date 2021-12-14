@@ -73,28 +73,28 @@
             <!--Start Table-->
             <div class="container-fluid mt-n10">
                 <div class="card mb-4">
-                    <div class="card-header">Edit restaurant</div>
+                    <div class="card-header">Edit Abonnement Adult</div>
                     <div class="card-body">
                         <form action="update-adult.php?id=<?php echo $_GET['id']; ?>" method="POST"
                               enctype="multipart/form-data">
 
                             <div class="form-group">
-                                <label for="id ">restaurant id</label>
+                                <label for="id ">Adulte id</label>
                                 <input value="<?php echo $id; ?>" name="id" class="form-control" id="id Adult"
-                                       type="text" placeholder="restaurant id..."/>
+                                       type="text" placeholder=" id..."/>
                             </div>
                             <div class="form-group">
-                                <label for="adresse">restaurant adresse:</label>
+                                <label for="adresse">Prix</label>
                                 <input value="<?php echo $price; ?>" name="price" class="form-control"
                                        id="restaurant-adresse" type="text" placeholder="Adult price..."/>
                             </div>
                             <div class="form-group">
-                                <label for="type">restaurant type:</label>
+                                <label for="type">type Abonnement :</label>
                                 <input value="<?php echo $type; ?>" name="type" class="form-control"
-                                       id="restaurant-type" type="text" placeholder="Adult- ype..."/>
+                                       id="restaurant-type" type="text" placeholder="Adult- type..."/>
                             </div>
                             <div class="form-group">
-                                <label for="description">restaurant description:</label>
+                                <label for="description">description:</label>
                                 <input value="<?php echo $description; ?>" name="description" class="form-control"
                                        id="description" type="text" placeholder="description Adult..."/>
                             </div>

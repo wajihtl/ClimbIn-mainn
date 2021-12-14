@@ -8,6 +8,11 @@
 
             </a>
 
+            <a class="nav-link collapsed pt-4 " href="whyus.php">
+                <div class="nav-link-icon"><i data-feather="book"></i></div>
+                <?php echo ($lang == "fr" ?  "whyus" : "whyus"); ?>
+            </a>
+
             <a class="nav-link collapsed pt-4 " href="Adult.php">
                 <div class="nav-link-icon"><i data-feather="book"></i></div>
                 <?php echo ($lang == "fr" ?  "Adultes" : "Adultes"); ?>

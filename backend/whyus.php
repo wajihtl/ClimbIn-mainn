@@ -20,7 +20,7 @@
                 <div class="page-header-content d-flex align-items-center justify-content-between text-white">
                     <h1 class="page-header-title">
                         <div class="page-header-icon"><i data-feather="calendar"></i></div>
-                        <span>Restaurants</span>
+                        <span>Why us</span>
                     </h1>
                     <a href="add-new-adult.php" title="Add new Adult" class="btn btn-white">
                         <div class="page-header-icon"><i data-feather="plus"></i></div>
@@ -31,15 +31,11 @@
         <!--Start Table-->
         <div class="container-fluid mt-n10">
             <div class="card mb-4">
-                <div class="card-header">Adulte</div>
+                <div class="card-header">Why Us</div>
                 <div class="card-body">
                     <div class="datatable table-responsive">
                         <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
-                            <a class="btn btn-primary mr-2 my-1" tabindex="0" aria-controls="datatable-buttons"
-                               href="Adult.php" onclick="CopyToClipboard('dataTable')"><span>Copier</span></a>
-                            <a class="btn btn-primary mr-2 my-1 " tabindex="0" aria-controls="datatable-buttons"
-                               href="Adult.php" onclick="exportTableToExcel('dataTable')"><span>Excel</span></a>
-                            &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                             <a><label>Chercher: <input type="text" id="myInput" onkeyup="myFunction()"
                                                        class="form-control form-control-sm"
                                                        placeholder="chercher par nom.."></label></a>
@@ -47,44 +43,38 @@
 
                             <thead>
                             <tr>
-                                <th onclick="sortTable(0)"><i data-feather="list"></i> Type</th>
-                                <th onclick="sortTable(1)"><i data-feather="list"></i> Price</th>
-                                <th onclick="sortTable(2)"><i data-feather="list"></i> Description</th>
+                                <th onclick="sortTable(0)"><i data-feather="list"></i> Title</th>
+                                <th onclick="sortTable(1)"><i data-feather="list"></i> Content</th>
                                 <th>Éditer</th>
                                 <th>Effacer</th>
                             </tr>
                             </thead>
                             <tbody>
                             <?php
-                            $sql = "SELECT * FROM adult";
+                            $sql = "SELECT * FROM whyus";
                             $stmt = $pdo->prepare($sql);
                             $stmt->execute();
-                            while ($adult = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                            while ($whyus = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
-                                $id = $adult['id'];
-                                $type = $adult['type'];
-                                $price = $adult['Price'];
-                                $description = $adult['description'];
+                                $id = $whyus['id'];
+                                $Title = $whyus['Title'];
+                                $Content = $whyus['Content'];
 
 
                                 ?>
                                 <tr>
 
-
                                     <td>
-                                        <?php echo $type; ?>
+                                        <?php echo $Title; ?>
                                     </td>
                                     <td>
-                                        <?php echo $price; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $description; ?>
+                                        <?php echo $Content; ?>
                                     </td>
 
 
                                     <td>
-                                        <form action="update-adult.php" method="POST">
-                                            <input type="hidden" name="id" value="<?php echo $id; ?>">
+                                        <form action="update-whyus.php" method="POST">
+                                            <input type="hidden" name="Title" value="<?php echo $id; ?>">
                                             <button name="edit-user" type="submit" class="btn btn-primary btn-icon"><i
                                                         data-feather="edit"></i></button>
                                         </form>
@@ -93,13 +83,13 @@
                                         <?php
                                         if (isset($_POST['delete'])) {
                                             $id = $_POST['adult-id'];
-                                            $sql = "DELETE FROM adult WHERE id = :id";
+                                            $sql = "DELETE FROM whyus WHERE id = :id";
                                             $stmt = $pdo->prepare($sql);
-                                            $stmt->execute([':id' => $id]);
-                                            header("Location: adult.php");
+                                            $stmt->execute([':Title' => $id]);
+                                            header("Location: whyus.php");
                                         }
                                         ?>
-                                        <form action="adult.php" method="POST">
+                                        <form action="whyus.php" method="POST">
                                             <input type="hidden" name="adult-id" value="<?php echo $id; ?>">
                                             <button name="delete" type="submit" class="btn btn-red btn-icon"><i
                                                         data-feather="trash-2"></i></button>

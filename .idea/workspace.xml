@@ -5,10 +5,21 @@
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/404.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/about-us.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/add-new-whyus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/update-whyus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/whyus.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bar.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/class-details.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flags/eng.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flags/fra.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flags/ger.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/img/banner-food.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/event/latest-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/event/latest-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/event/latest-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/event/latest-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/event/latest-5.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/img/services/boisson.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/img/services/cafe.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/img/services/citronnade.jpg" afterDir="false" />
@@ -19,6 +30,9 @@
       <change afterPath="$PROJECT_DIR$/img/services/smoothie-4.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/includes/db.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/eng.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/fre.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/ger.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/services.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/team.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
@@ -32,6 +46,11 @@
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/hero/img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hero/img1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/letest-blog/latest-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/letest-blog/latest-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/letest-blog/latest-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/letest-blog/latest-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/letest-blog/latest-5.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" />
@@ -106,6 +125,7 @@
       <workItem from="1638959728140" duration="522000" />
       <workItem from="1638960420114" duration="735000" />
       <workItem from="1639043959974" duration="6588000" />
+      <workItem from="1639480673202" duration="10436000" />
     </task>
     <servers />
   </component>

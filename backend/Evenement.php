@@ -100,7 +100,7 @@
                                         <?php
                                         if (isset($_POST['delete'])) {
                                             $id = $_POST['id'];
-                                            $sql = "DELETE FROM event WHERE $id = :id";
+                                            $sql = "DELETE FROM event WHERE id = :id";
                                             $stmt = $pdo->prepare($sql);
                                             $stmt->execute([':id' => $id]);
                                             header("Location: Evenement.php");

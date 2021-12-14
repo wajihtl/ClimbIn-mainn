@@ -15,12 +15,12 @@
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css<?php echo time(); ?>" type="text/css">
-    <link rel="stylesheet" href="css/flaticon.css<?php echo time(); ?>" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css<?php echo time(); ?>" type="text/css">
-    <link rel="stylesheet" href="css/barfiller.css<?php echo time(); ?>" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css<?php echo time(); ?>" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css<?php echo time(); ?>" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>" type="text/css">
 </head>
 
@@ -61,7 +61,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="logo">
-                    <a href="./index.html">
+                    <a href="./index.php">
                         <img src="img/logo.png" alt="">
                     </a>
                 </div>
@@ -179,7 +179,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title">
-                    <h2>Nos food delicieu</h2>
+                    <h2 style="margin: 40px 0px 40px 0px">Nos food delicieu</h2>
                 </div>
             </div>
         </div>
@@ -228,35 +228,6 @@
 </section>
 <!-- Services Section End -->
 
-    <!-- Get In Touch Section Begin -->
-    <div class="gettouch-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="gt-text">
-                        <i class="fa fa-map-marker"></i>
-                        <p>Rue Jaber Ibn Hayan 2046 La Marsa,<br/> Tunisia</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="gt-text">
-                        <i class="fa fa-mobile"></i>
-                        <ul>
-                            <li>+216-23-727-427</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="gt-text email">
-                        <i class="fa fa-envelope"></i>
-                        <p>climbin.tunis@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Get In Touch Section End -->
-
     <!-- Footer Section Begin -->
     <section class="footer-section">
         <div class="container">
@@ -279,10 +250,10 @@
                     <div class="fs-widget">
                         <h4>Useful links</h4>
                         <ul>
-                            <li><a href="#">About</a></li>
+                            <li><a href="./about-us">About</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Classes</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="./class-details.php">Classes</a></li>
+                            <li><a href="./contact.php">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -290,29 +261,13 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="copyright-text">
-                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                            All rights reserved 2021| This template is made with <i class="fa fa-heart"
-                                                                                    aria-hidden="true"></i> by Jihed
-                            Mohamed</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 2021| This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by Jihed Mohamed</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Footer Section End -->
-
-    <!-- Search model Begin -->
-    <div class="search-model">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-            <div class="search-close-switch">+</div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
-            </form>
-        </div>
-    </div>
-    <!-- Search model end -->
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>

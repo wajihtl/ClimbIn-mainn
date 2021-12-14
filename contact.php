@@ -42,7 +42,7 @@
                 <li><a href="./about-us.php">About Us</a></li>
                 <li><a href="./class-details.php">Planing</a></li>
                 <li><a href="./services.php">Services</a></li>
-                <li><a href="./team.php">Our Team</a></li>
+                <li><a href="./bar.php">bar</a></li>
                 <li><a href="./contact.php">Contact</a></li>
             </ul>
         </nav>
@@ -69,12 +69,12 @@
             <div class="col-lg-6">
                 <nav class="nav-menu">
                     <ul>
-                        <li class="active"><a href="./index.php">Home</a></li>
+                        <li><a href="./index.php">Home</a></li>
                         <li><a href="./about-us.php">About Us</a></li>
                         <li><a href="./class-details.php">Planing</a></li>
                         <li><a href="./services.php">Services</a></li>
-                        <!-- <li><a href="./team.php">Our Team</a></li> -->
-                        <li><a href="./contact.php">Contact</a></li>
+                        <li><a href="./bar.php">bar</a></li>
+                        <li class="active"><a href="./contact.php">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -103,8 +103,7 @@
                     <div class="breadcrumb-text">
                         <h2>Contact Us</h2>
                         <div class="bt-option">
-                            <a href="./index.html">Home</a>
-                            <a href="#">Pages</a>
+                            <a>Home</a>
                             <span>Contact us</span>
                         </div>
                     </div>
@@ -145,7 +144,6 @@
                         <form action="#">
                             <input type="text" placeholder="Name">
                             <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Website">
                             <textarea placeholder="Comment"></textarea>
                             <button type="submit">Submit</button>
                         </form>
@@ -162,34 +160,6 @@
     </section>
     <!-- Contact Section End -->
 
-    <!-- Get In Touch Section Begin -->
-    <div class="gettouch-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="gt-text">
-                        <i class="fa fa-map-marker"></i>
-                        <p>Rue Jaber Ibn Hayan 2046 La Marsa,<br/> Tunisia</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="gt-text">
-                        <i class="fa fa-mobile"></i>
-                        <ul>
-                            <li>+216-23-727-427</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="gt-text email">
-                        <i class="fa fa-envelope"></i>
-                        <p>climbin.tunis@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Get In Touch Section End -->
 
     <!-- Footer Section Begin -->
     <section class="footer-section">
@@ -206,7 +176,6 @@
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-youtube-play"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa  fa-envelope-o"></i></a>
                         </div>
                     </div>
                 </div>
@@ -214,10 +183,10 @@
                     <div class="fs-widget">
                         <h4>Useful links</h4>
                         <ul>
-                            <li><a href="#">About</a></li>
+                            <li><a href="./about-us">About</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Classes</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="./class-details.php">Classes</a></li>
+                            <li><a href="./contact.php">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -225,9 +194,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="copyright-text">
-                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 2021| This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by Jihed Mohamed</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 2021| This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by Jihed Mohamed</a></p>
                     </div>
                 </div>
             </div>
@@ -235,16 +202,6 @@
     </section>
     <!-- Footer Section End -->
 
-    <!-- Search model Begin -->
-    <div class="search-model">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-            <div class="search-close-switch">+</div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
-            </form>
-        </div>
-    </div>
-    <!-- Search model end -->
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
